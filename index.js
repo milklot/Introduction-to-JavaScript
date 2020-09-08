@@ -170,61 +170,63 @@ function game(choice) {
         // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 
         function annoyingSong(starting_number) {
+            var i = 0;
+            var annoy = starting_number;
+
+            while (i != starting_number) {
+                console.log("bottles of coke on the wall", annoy);
+                i++;
+                annoy--;
+            }
+
 
         }
 
-
-        function annoyingSong(bottles) {
-            //   for(let i = 0; i <= numbers.length; i--) {
-            //     // do stuff here
-            //   } 
-
-            // }
-
-            // annoyingSong(99)
+        annoyingSong(99);
 
 
-            /************************************************************** Task 7 **************************************************************/
-            //Grade Calculator
-            //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
-            //90s should be A 
-            //80s should be B 
-            //70s should be Cs 
-            //60s should be D 
-            //and anything below 60 should be F
 
-            var mark = (Math.floor(Math.random() * 101));
+        /************************************************************** Task 7 **************************************************************/
+        //Grade Calculator
+        //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
+        //90s should be A 
+        //80s should be B 
+        //70s should be Cs 
+        //60s should be D 
+        //and anything below 60 should be F
 
-            function mark_grade(mark) {
-                if (mark >= 90) {
-                    return ("A");
-                } else if ((mark >= 80) && (mark < 90)) {
-                    return ("B");
-                } else if ((mark >= 70) && (mark < 80)) {
-                    return ("C");
-                } else if ((mark >= 60) && (mark < 70)) {
-                    return ("D");
-                } else {
-                    return ("F");
-                }
+        var mark = (Math.floor(Math.random() * 101));
 
+        function mark_grade(mark) {
+            if (mark >= 90) {
+                return ("A");
+            } else if ((mark >= 80) && (mark < 90)) {
+                return ("B");
+            } else if ((mark >= 70) && (mark < 80)) {
+                return ("C");
+            } else if ((mark >= 60) && (mark < 70)) {
+                return ("D");
+            } else {
+                return ("F");
             }
 
-            console.log(mark_grade(mark));
+        }
+
+        console.log(mark_grade(mark));
 
 
 
 
 
-            /************************************************************** Stretch **************************************************************/
-            //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
-            // Hint - you may need to study tomorrow's traning kit on arrays 
-            // try looking up the .includes() method
+        /************************************************************** Stretch **************************************************************/
+        //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
+        // Hint - you may need to study tomorrow's traning kit on arrays 
+        // try looking up the .includes() method
 
 
 
 
 
-            /************************************************************** Stretch **************************************************************/
-            //Take Rock, Paper, Sissors further
-            //update your rock papers sissors code below to take a prompt from a user using the window object
+        /************************************************************** Stretch **************************************************************/
+        //Take Rock, Paper, Sissors further
+        //update your rock papers sissors code below to take a prompt from a user using the window object
