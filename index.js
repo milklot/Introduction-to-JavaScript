@@ -223,7 +223,16 @@ console.log(mark_grade(mark));
 // try looking up the .includes() method
 
 
-function vowel_count(wor)
+function vowel_count(word) {
+    let lower = word.toLowerCase();
+    let counter = 0;
+    for (i = 0; i < lower.length; i++) {
+        if (lower[i].include("aeou")) {
+            counter++;
+        }
+    }
+    return counter;
+}
 
 
 /************************************************************** Stretch **************************************************************/
