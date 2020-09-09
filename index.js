@@ -109,7 +109,7 @@ function feeder(dogWeight, age) {
 
 function game(choice) {
 
-    let enemy_choice = (math.Floor(math.random() * 3));
+    let enemy_choice = (Math.floor(Math.random() * 3));
     let r = "rock"; // its zero
     let s = "sissors"; // its one 
     let p = "papper"; // its two
@@ -141,8 +141,9 @@ function game(choice) {
     } else if ((choice == s) && (enemy_choice == r)) {
         console.log("you lost");
     }
-
 }
+
+console.log(game("rock"));
 
 
 /************************************************************** Task 5 **************************************************************/
@@ -226,13 +227,15 @@ console.log(mark_grade(mark));
 function vowel_count(word) {
     let lower = word.toLowerCase();
     let counter = 0;
-    for (i = 0; i < lower.length; i++) {
-        if (lower[i].include("aeou")) {
+    for (let i = 0; i < lower.length; i++) {
+        if (lower[i].includes("aeou")) {
             counter++;
         }
     }
     return counter;
 }
+
+console.log(vowel_count("eTOmOytEst"));
 
 
 /************************************************************** Stretch **************************************************************/
